@@ -1,0 +1,26 @@
+[
+  {
+    "titulo": "Venom",
+    "nota": 9.5,
+    "id": "1",
+    "status": "PARA_ASSISTIR",
+    "review": "Amei.",
+    "linkImagem": "https://wallpaperbat.com/img/106685002-art-metallic-venom-marvel-wallpaper.jpg"
+  },
+  {
+    "titulo": "Parasite",
+    "nota": 10.0,
+    "id": "2",
+    "status": "ASSISTIDO",
+    "review": "Crítico, profundo e com reviravoltas impactantes.",
+    "linkImagem": "https://wallpaperbat.com/img/56524693-art-film-poster-parasite-wallpaper.jpg"
+  },
+  {
+    "titulo": "Wicked",
+    "nota": 7.7,
+    "id": "3",
+    "status": "ASSISTIDO",
+    "review": "Um épico de fantasia impecável e emocionante.",
+    "linkImagem": "https://wallpaperbat.com/img/125814145-pin-page.jpg"
+  }
+]

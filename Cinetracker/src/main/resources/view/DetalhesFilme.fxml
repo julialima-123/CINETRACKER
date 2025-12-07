@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: #3e1d1d;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DetalhesFilmeController">
+
+    <top>
+        <HBox alignment="CENTER_LEFT" prefHeight="50.0" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="voltarButton" mnemonicParsing="false" onAction="#handleVoltar" text="&lt; Voltar" style="-fx-background-color: #555555;" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="20.0" />
+                    </HBox.margin>
+                </Button>
+            </children>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="15.0" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets bottom="10.0" left="20.0" right="20.0" top="30.0" />
+            </padding>
+            <children>
+                <Label fx:id="tituloNotaLabel" text="TÍTULO DO FILME (9.5 ★)" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Label>
+
+                <ImageView fx:id="posterImageView" fitHeight="350.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-color: #555555; -fx-border-color: #F8B31C; -fx-border-width: 3;">
+                </ImageView>
+
+                <Label text="Sua Review:" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <TextArea fx:id="reviewTextArea" prefHeight="100.0" promptText="Escreva sua crítica aqui..." wrapText="true" />
+
+                <Button fx:id="marcarAssistidoButton" mnemonicParsing="false" onAction="#handleMarcarAssistido" text="MARCAR COMO ASSISTIDO" style="-fx-background-color: #9c27b0;" textFill="WHITE" />
+                <Button fx:id="salvarReviewButton"
+                        mnemonicParsing="false"
+                        onAction="#handleSalvarReview"
+                        text="SALVAR REVIEW"
+                        style="-fx-background-color: #03a9f4;"
+                         textFill="WHITE" />
+            </children>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="800.0" style="-fx-background-color: #333333;" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="HOME" textFill="WHITE" />
+                <Label text="SEARCH" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                    </HBox.margin>
+                </Label>
+                <Label text="ADD" textFill="WHITE" />
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane style="-fx-background-color: #3e1d1d;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.HomeScreenController">
+
+    <top>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="80.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@/images/logo.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+    </top>
+
+    <center>
+        <VBox alignment="TOP_CENTER" spacing="15.0" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true" style="-fx-border-color: #F8B31C; -fx-border-width: 5; -fx-border-radius: 50; -fx-background-radius: 50;">
+                    <VBox.margin>
+                        <Insets top="10.0" />
+                    </VBox.margin>
+                    <image>
+                        <Image url="@/images/user.jpeg" />
+                    </image>
+                </ImageView>
+
+                <Label text="DÉBORAH" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+
+                <TilePane fx:id="tilePaneFilmes" alignment="TOP_CENTER" hgap="10.0" prefTileHeight="300.0" prefTileWidth="230.0" vgap="10.0">
+                    <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                    </padding>
+                </TilePane>
+            </children>
+        </VBox>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="60.0" prefWidth="800.0" style="-fx-background-color: #333333;" BorderPane.alignment="CENTER">
+            <children>
+                <Label text="HOME" fx:id="homeLabel" onMouseClicked="#handleNavegacaoHome" textFill="WHITE" />
+
+                <Label text="SEARCH" fx:id="searchLabel" onMouseClicked="#handleNavegacaoAssistidos" textFill="WHITE">
+                    <HBox.margin>
+                        <Insets left="50.0" right="50.0" />
+                    </HBox.margin>
+                </Label>
+
+                <Label text="ADD" fx:id="addLabel" onMouseClicked="#handleAddNovoFilme" textFill="WHITE" />
+            </children>
+        </HBox>
+    </bottom>
+</BorderPane>
+

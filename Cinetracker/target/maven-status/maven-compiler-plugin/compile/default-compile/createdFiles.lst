@@ -1,0 +1,5 @@
+model\GerenciadorDeFilmes$2.class
+controller\HomeScreenController.class
+controller\FiltrarFilmesController.class
+model\Main.class
+controller\DetalhesFilmeController.class
